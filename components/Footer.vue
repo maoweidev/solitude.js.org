@@ -4,12 +4,8 @@ const {footer} = useAppConfig()
 const footer_column = [{
   label: '社区',
   children: [{
-    label: 'QQ 群',
-    to: 'https://qm.qq.com/q/VlqOewI4Cu',
-    target: '_blank'
-  }, {
     label: 'Telegram',
-    to: 'https://t.me/efuome',
+    to: 'https://t.me/solitudePro',
     target: '_blank'
   }]
 }, {

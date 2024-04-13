@@ -41,7 +41,7 @@ export default defineAppConfig({
       },
       {
         icon: 'i-simple-icons-telegram',
-        to: 'https://t.me/efuome',
+        to: 'https://t.me/solitudePro',
         target: '_blank',
         'aria-label': 'Telegram',
       }
