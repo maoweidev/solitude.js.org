@@ -9,16 +9,6 @@ const items = [
     alt: '晞云云计算',
     description: '新一代云计算平台',
     from: 'CDN 赞助',
-  },
-  {
-    id: 2,
-    link: 'https://cloud.firstdyeing.com/',
-    logo: '/img/ads/cqy.ico',
-    image: '/img/cqy.webp',
-    alt: '初染工坊云',
-    title: '初染工坊云',
-    description: '初染品质，坚如磐石，用心超越所见',
-    from: '爱发电赞助',
   }
 ]
 

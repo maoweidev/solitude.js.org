@@ -30,21 +30,27 @@ export default defineAppConfig({
     ],
   },
   footer: {
-    credits: 'Copyright © 2023 Efu',
+    credits: 'Copyright © 2023 Efu - MIT License',
     colorMode: false,
     links: [
       {
-        icon: 'i-simple-icons-github',
-        to: 'https://github.com/valor-x/hexo-theme-solitude',
+        icon: 'i-simple-icons-discord',
+        to:'https://discord.gg/Y8VEvVgW',
         target: '_blank',
-        'aria-label': 'Solitude on GitHub',
+        'aria-label': 'Discord',
       },
       {
         icon: 'i-simple-icons-telegram',
         to: 'https://t.me/solitudePro',
         target: '_blank',
         'aria-label': 'Telegram',
-      }
+      },
+      {
+        icon: 'i-simple-icons-github',
+        to: 'https://github.com/valor-x/hexo-theme-solitude',
+        target: '_blank',
+        'aria-label': 'Solitude on GitHub',
+      },
     ]
   },
   toc: {
