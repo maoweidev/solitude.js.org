@@ -6,7 +6,7 @@ hero:
   description: "一款优雅的 Hexo 主题，支持懒加载、PWA、Latex以及多种评论系统。"
   orientation: horizontal
   headline:
-    label: Solitude 1.7.10 现已发布！
+    label: Solitude 1.8.11 现已发布！
     to: https://github.com/valor-x/hexo-theme-solitude/releases/latest
     icon: i-heroicons-sparkles-20-solid
   links:
