@@ -34,6 +34,9 @@ export default defineAppConfig({
       }
     }
   },
+  seo: {
+    siteName: 'Solitude',
+  },
   header: {
     logo: {
       alt: '',
@@ -88,9 +91,15 @@ export default defineAppConfig({
           target: '_blank',
         },
         {
-          icon: 'i-heroicons-photo',
-          label: '去图图床',
-          to: 'https://7tu.top/',
+          icon: 'i-heroicons-banknotes',
+          label: '爱发电赞助',
+          to: 'https://afdian.net/a/efu0u0',
+          target: '_blank',
+        },
+        {
+          icon: 'i-heroicons-heart',
+          label: 'Github Sponsor',
+          to: 'https://github.com/sponsors/efuo',
           target: '_blank',
         }
       ],

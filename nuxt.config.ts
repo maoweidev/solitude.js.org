@@ -7,8 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxthq/studio',
     'nuxt-og-image',
-    '@nuxtjs/sitemap',
-    "@nuxt/image"
+    '@nuxt/image',
+    '@nuxtjs/robots',
   ],
   hooks: {
     'components:extend': function (components) {
@@ -24,13 +24,20 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/get-started': { redirect: '/get-started/installation' },
+    '/configuration': { redirect: '/configuration/global' },
   },
   nitro: {
     prerender: {
       routes: [
-        '/api/search.json'
+        '/api/search.json',
+        '/sitemap.xml'
       ]
     }
+  },
+  robots: {
+    UserAgent: '*',
+    Disallow: '/admin',
+    Sitemap: 'https://docs.efu.me/sitemap.xml'
   },
   colorMode: {
     preference: 'dark'
