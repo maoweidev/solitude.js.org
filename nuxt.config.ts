@@ -11,32 +11,31 @@ export default defineNuxtConfig({
     "@nuxt/image"
   ],
   hooks: {
-    'components:extend': (components) => {
-      const globals = components.filter((c) => ['UButton', 'UIcon'].includes(c.pascalName))
-
-      globals.forEach((c) => c.global = true)
-    }
+    'components:extend': function (components) {
+      for (const comp of components) {
+        if (comp.global) {
+          comp.global = 'sync'
+        }
+      }
+    },
   },
   ui: {
     icons: ['heroicons', 'simple-icons']
   },
   routeRules: {
-    '/api/search.json': { prerender: true },
+    '/get-started': { redirect: '/get-started/installation' },
   },
-  devtools: {
-    enabled: true
+  nitro: {
+    prerender: {
+      routes: [
+        '/api/search.json'
+      ]
+    }
+  },
+  colorMode: {
+    preference: 'dark'
   },
   typescript: {
     strict: true
   },
-  sitemap: {
-    strictNuxtContentPaths: true,
-    xslColumns: [
-      { label: 'URL', width: '50%' },
-      { label: 'Last Modified', select: 'sitemap:lastmod', width: '25%' },
-      { label: 'Priority', select: 'sitemap:priority', width: '12.5%' },
-      { label: 'Change Frequency', select: 'sitemap:changefreq', width: '12.5%' },
-    ],
-  },
-  ssr: true
 })
