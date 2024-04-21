@@ -8,7 +8,26 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     'nuxt-og-image',
     '@nuxt/image',
-    '@nuxtjs/robots',
+    ['@nuxtjs/robots', {
+      rules: [
+        {UserAgent: '*'},
+        {Disallow: ''},
+        {BlankLine: true},
+        {Comment: 'Comment here'},
+        {Sitemap: 'https://docs.efu.me/sitemap.xml'},
+        {Host: 'https://docs.efu.me'},
+        {Allow: '/'},
+        {Allow: '/get-started'},
+        {Allow: '/configuration'},
+        {Allow: '/comments'},
+        {Allow: '/search'},
+        {Allow: '/pages'},
+        {Disallow: '/api'},
+        {Disallow: '/_content'},
+        {Disallow: '/_nuxt'},
+        {Disallow: '/_dir'},
+      ]
+    }]
   ],
   hooks: {
     'components:extend': function (components) {
@@ -23,8 +42,8 @@ export default defineNuxtConfig({
     icons: ['heroicons', 'simple-icons']
   },
   routeRules: {
-    '/get-started': { redirect: '/get-started/installation' },
-    '/configuration': { redirect: '/configuration/global' },
+    '/get-started': {redirect: '/get-started/installation'},
+    '/configuration': {redirect: '/configuration/global'},
   },
   nitro: {
     prerender: {
@@ -33,11 +52,6 @@ export default defineNuxtConfig({
         '/sitemap.xml'
       ]
     }
-  },
-  robots: {
-    UserAgent: '*',
-    Disallow: '/admin',
-    Sitemap: 'https://docs.efu.me/sitemap.xml'
   },
   colorMode: {
     preference: 'dark'

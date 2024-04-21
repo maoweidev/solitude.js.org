@@ -16,8 +16,7 @@ export default defineEventHandler(async (event) => {
     sitemap.write({
       url: doc._path,
       changefreq: 'monthly',
-      priority: 0.7,
-      lastmod: doc._updatedAt,
+      priority: 0.8,
     })
   }
   sitemap.end()
