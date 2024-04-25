@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import request from '~/composables/request'
+import { ref, onMounted, type Ref } from 'vue';
+import request from '~/composables/request';
 
 interface Contributor {
   login: string;
@@ -7,23 +8,23 @@ interface Contributor {
   avatar_url: string;
 }
 
-const star = ref('0')
-const downloads = ref('0')
-const contributors: Ref<Contributor[]> = ref([])
+const star = ref('0');
+const downloads = ref('0');
+const contributors: Ref<Contributor[]> = ref([]);
 
 async function fetchState() {
-  const { format } = Intl.NumberFormat('en', { notation: 'compact' })
+  const { format } = Intl.NumberFormat('en', { notation: 'compact' });
 
-  const { data: starInfo } = await request.getStar()
-  star.value = format(starInfo.data.star)
-  const { data: infoData } = await request.getInfo()
-  downloads.value = format(infoData.data.downloads + 10000)
-  contributors.value = infoData.data.contributors
+  const { data: starInfo } = await request.getStar();
+  star.value = format(starInfo.data.star);
+  const { data: infoData } = await request.getInfo();
+  downloads.value = format(infoData.data.downloads + 10000);
+  contributors.value = infoData.data.contributors;
 }
 
 onMounted(() => {
-  fetchState()
-})
+  fetchState();
+});
 </script>
 
 <template>
@@ -84,4 +85,3 @@ onMounted(() => {
     </ULandingSection>
   </div>
 </template>
-~/server/api/user
