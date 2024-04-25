@@ -25,6 +25,7 @@
         <img
           src="https://s3.qjqq.cn/47/6616165b0c3de.webp!color"
           class="w-full"
+          alt="A person wearing a mask while working on a computer."
         />
       </template>
     </ULandingHero>
@@ -43,16 +44,16 @@
 </template>
 
 <script setup lang="ts">
-import CtaCard from '~/components/CtaCard.vue'
+import CtaCard from '@/components/CtaCard.vue'
 
 const {data: page} = await useAsyncData('index', () => queryContent('/').findOne())
 
 useSeoMeta({
   titleTemplate: '',
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
+  title: page.value?.title,
+  ogTitle: page.value?.title,
+  description: page.value?.description,
+  ogDescription: page.value?.description
 })
 
 const carouselRef = ref()
