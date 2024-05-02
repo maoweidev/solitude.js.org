@@ -23,6 +23,9 @@ dependencies:
   '@nuxt/ui-pro':
     specifier: ^1.1.0
     version: 1.1.0(axios@1.6.8)(nuxt@3.11.2)(vite@5.2.10)(vue@3.4.25)
+  '@nuxtjs/google-adsense':
+    specifier: ^3.0.0
+    version: 3.0.0(vue@3.4.25)
   '@nuxtjs/robots':
     specifier: ^3.0.0
     version: 3.0.0
@@ -1635,6 +1638,19 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
+    dev: false
+
+  /@nuxtjs/google-adsense@3.0.0(vue@3.4.25):
+    resolution: {integrity: sha512-fR1rbj6mnfBCWMkVSocPUYX11rGzTwSs1v2sajG6wtXGjXLGRjJSFKSynYHdwO3V4o4xRvtve0W/Db96eiTKmA==}
+    dependencies:
+      '@nuxt/kit': 3.11.2
+      '@vueuse/core': 10.9.0(vue@3.4.25)
+      defu: 6.1.4
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - vue
     dev: false
 
   /@nuxtjs/mdc@0.6.1:

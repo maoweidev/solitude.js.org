@@ -7,14 +7,14 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     'nuxt-og-image',
     '@nuxt/image',
+    '@nuxtjs/google-adsense',
     ['@nuxtjs/robots', {
       rules: [
         {UserAgent: '*'},
         {Disallow: ''},
         {BlankLine: true},
         {Comment: 'Comment here'},
-        {Sitemap: 'https://docs.efu.me/sitemap.xml'},
-        {Host: 'https://docs.efu.me'},
+        {Sitemap: 'https://solitude.js.org/sitemap.xml'},
         {Allow: '/'},
         {Allow: '/get-started'},
         {Allow: '/configuration'},
@@ -36,6 +36,9 @@ export default defineNuxtConfig({
         }
       }
     },
+  },
+  googleAdsense: {
+    id: 'ca-pub-6338523842252061',
   },
   ui: {
     icons: ['heroicons', 'simple-icons']

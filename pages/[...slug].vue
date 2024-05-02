@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { withoutTrailingSlash } from 'ufo'
-import AdsGoogle from '~/components/ads/adsGoogle.vue';
 import AdsSponsor from '~/components/ads/adsSponsor.vue'
 
 definePageMeta({
@@ -67,7 +66,7 @@ const links = computed(() => [toc?.bottom?.edit && {
           <div class="hidden lg:block space-y-6" :class="{ '!mt-6': 2 }">
             <UDivider type="dashed" />
             <AdsSponsor />
-            <AdsGoogle />
+            <Adsbygoogle />
           </div>
         </template>
       </UContentToc>
