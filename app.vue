@@ -52,6 +52,11 @@ provide('navigation', navigation)
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
+      <Adsbygoogle
+              :ad-style="{display: 'block', textAlign: 'center', height: '280px', margin: '16px 0', minWidth: '100%'}"
+              :ad-layout="'in-article'"
+              :hide-unfilled=true
+            />
     </UMain>
 
     <Footer />
