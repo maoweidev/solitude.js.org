@@ -38,7 +38,7 @@ export default defineNuxtConfig({
     },
   },
   googleAdsense: {
-    id: 'ca-pub-6338523842252061',
+    id: 'ca-pub-6338523842252061'
   },
   ui: {
     icons: ['heroicons', 'simple-icons']
@@ -60,5 +60,5 @@ export default defineNuxtConfig({
   },
   typescript: {
     strict: true
-  },
+  }
 })
