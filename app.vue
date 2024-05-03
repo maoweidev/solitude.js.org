@@ -12,8 +12,9 @@ const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', {
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { name: 'baidu-site-verification',content: 'codeva-gUX7ssU6Ed' },
-    { name: 'google-site-verification',content:'OQ-FnVME50EgIvv5nO4fsNl7EHkEl0vUSoFUe_fAMgY'}
+    { name: 'baidu-site-verification', content: 'codeva-LeTW5u4n40' },
+    { name: 'google-site-verification', content: 'OQ-FnVME50EgIvv5nO4fsNl7EHkEl0vUSoFUe_fAMgY' },
+    { name: 'msvalidate.01', content: '7EBDEFFBCC9B2A2F2DCC7A53B7B02D02' }
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico' }
@@ -22,7 +23,8 @@ useHead({
     lang: 'zh-CN'
   },
   script: [
-    {type:'text/javascript', innerHTML:`
+    {
+      type: 'text/javascript', innerHTML: `
       (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -54,10 +56,8 @@ provide('navigation', navigation)
         <NuxtPage />
       </NuxtLayout>
       <Adsbygoogle
-              :ad-style="{display: 'block', textAlign: 'center', height: '280px', margin: '16px 0', minWidth: '100%'}"
-              :ad-layout="'in-article'"
-              :hide-unfilled=true
-            />
+        :ad-style="{ display: 'block', textAlign: 'center', height: '280px', margin: '16px 0', minWidth: '100%' }"
+        :ad-layout="'in-article'" :hide-unfilled=true />
     </UMain>
 
     <Footer />
