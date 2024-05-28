@@ -24,13 +24,10 @@ useHead({
   },
   script: [
     {
-      type: 'text/javascript', innerHTML: `
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "lxyodv70a9");
-    `}
+      defer: true,
+      src: 'https://cloud.umami.is/script.js',
+      'data-website-id': 'c82449b7-d50c-4933-8b1d-90d77fce4cf2'
+    }
   ]
 })
 
