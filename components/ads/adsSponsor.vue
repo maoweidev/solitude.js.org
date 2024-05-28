@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue'
 
 const items = [
   {
@@ -11,15 +11,15 @@ const items = [
     alt: '晞云云计算',
     description: '新一代云计算平台',
     from: 'CDN 赞助',
-  },
-];
+  }
+]
 
-const item = ref(null);
+const item = ref(null)
 
 onMounted(() => {
-  const randomIndex = Math.floor(Math.random() * items.length);
-  item.value = items[randomIndex];
-});
+  const randomIndex = Math.floor(Math.random() * items.length)
+  item.value = items[randomIndex]
+})
 </script>
 
 <template>
@@ -32,7 +32,7 @@ onMounted(() => {
 
     <div class="flex flex-col items-center mt-2 text-center">
       <div class="inline-flex gap-1.5">
-        <img :src="item.logo" :alt="item.title" class="h-5 w-auto" />
+        <img :src="item.logo" :alt="item.title" class="h-5 w-auto">
 
         <UBadge v-if="item.title" variant="subtle" size="xs" :label="item.title" class="font-semibold rounded" />
       </div>
