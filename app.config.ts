@@ -93,13 +93,13 @@ export default defineAppConfig({
         {
           icon: 'i-heroicons-banknotes',
           label: '爱发电赞助',
-          to: 'https://afdian.net/a/efu0u0',
+          to: 'https://afdian.net/a/everfu',
           target: '_blank',
         },
         {
           icon: 'i-heroicons-heart',
           label: 'Github Sponsor',
-          to: 'https://github.com/sponsors/efuo',
+          to: 'https://github.com/sponsors/everfu',
           target: '_blank',
         }
       ],
