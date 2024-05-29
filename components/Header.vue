@@ -22,7 +22,9 @@ const { header } = useAppConfig()
     </template>
 
     <template #right>
-      <UContentSearchButton v-if="header?.search" :label="null" class="lg:hidden" />
+      <ColorPicker />
+      
+      <UContentSearchButton v-if="header?.search" :label="''" class="lg:hidden" />
 
       <UColorModeButton v-if="header?.colorMode" />
 

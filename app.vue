@@ -52,15 +52,15 @@ provide('navigation', navigation)
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
-      <Adsbygoogle
+      <!-- <Adsbygoogle
         :ad-style="{ display: 'block', textAlign: 'center', height: '280px', margin: '16px 0', minWidth: '100%' }"
-        :ad-layout="'in-article'" :hide-unfilled=true />
+        :ad-layout="'in-article'" :hide-unfilled=true /> -->
     </UMain>
 
     <Footer />
 
     <ClientOnly>
-      <LazyUContentSearch :files="files" :navigation="navigation" />
+      <LazyUContentSearch :files="files ?? []" :navigation="navigation ?? []" />
     </ClientOnly>
 
     <UNotifications />

@@ -15,6 +15,11 @@ const footer_column = [
         to: 'https://t.me/solitudePro',
         target: '_blank'
       },
+      {
+        label: 'QQ群',
+        to: 'https://jq.qq.com/?_wv=1027&k=5zZz3Zz',
+        target: '_blank'
+      }
     ]
   }, {
     label: '赞助',
@@ -30,7 +35,7 @@ const footer_column = [
   }, {
     label: '友情链接',
     children: [{
-      label: 'Efu',
+      label: 'Ever Fu',
       to: 'https://www.efu.me/',
       target: '_blank'
     }, {
@@ -63,8 +68,7 @@ const footer_column = [
   <UFooter>
     <template #top>
       <UFooterColumns :links="footer_column">
-        <template #right>
-        </template>
+        <template #right />
       </UFooterColumns>
     </template>
 
@@ -73,7 +77,7 @@ const footer_column = [
     </template>
 
     <template #right>
-      <UColorModeButton v-if="footer?.colorMode"/>
+      <UColorModeButton v-if="footer?.colorMode" />
 
       <template v-if="footer?.links">
         <UButton

@@ -66,11 +66,11 @@ const links = computed(() => [toc?.bottom?.edit && {
           <div class="hidden lg:block space-y-6" :class="{ '!mt-6': 2 }">
             <UDivider type="dashed" />
             <AdsSponsor />
-            <Adsbygoogle
+            <!-- <Adsbygoogle
               :ad-style="{display: 'block', textAlign: 'center', height: '280px', margin: '16px 0', minWidth: '100%'}"
               :ad-layout="'in-article'"
               :hide-unfilled=true
-            />
+            /> -->
           </div>
         </template>
       </UContentToc>

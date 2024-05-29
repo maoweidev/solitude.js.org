@@ -4,7 +4,7 @@
       <template #headline>
         <UBadge v-if="page.hero.headline" variant="subtle" size="lg" class="relative rounded-full font-semibold">
           <NuxtLink :to="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
-            <span class="absolute inset-0" aria-hidden="true"/>
+            <span class="absolute inset-0" aria-hidden="true" />
           </NuxtLink>
 
           {{ page.hero.headline.label }}
@@ -17,27 +17,23 @@
       </template>
 
       <template #title>
-        <MDC :value="page.hero.title"/>
+        <MDC :value="page.hero.title" />
       </template>
 
       <template #default>
-        <MDC :value="page.hero.code" tag="pre" class="prose prose-primary dark:prose-invert mx-auto"/>
+        <MDC :value="page.hero.code" tag="pre" class="prose prose-primary dark:prose-invert mx-auto" />
         <img
-          src="https://s3.qjqq.cn/47/6616165b0c3de.webp!color"
-          class="w-full"
+          src="https://s3.qjqq.cn/47/6616165b0c3de.webp!color" class="w-full"
           alt="A person wearing a mask while working on a computer."
-        />
+        >
       </template>
     </ULandingHero>
 
     <CtaCard />
 
-    <ULandingSection
-      title="结合你所需的一切."
-      class="!pt-0 from-gray-950/50 to-gray-900"
-    >
+    <ULandingSection title="结合你所需的一切." class="!pt-0 from-gray-950/50 to-gray-900">
       <UPageGrid>
-        <ULandingCard v-for="(item, index) of page.features.items" :key="index" v-bind="item"/>
+        <ULandingCard v-for="(item, index) of page.features.items" :key="index" v-bind="item" />
       </UPageGrid>
     </ULandingSection>
   </div>
@@ -46,7 +42,7 @@
 <script setup lang="ts">
 import CtaCard from '@/components/CtaCard.vue'
 
-const {data: page} = await useAsyncData('index', () => queryContent('/').findOne())
+const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
 
 useSeoMeta({
   titleTemplate: '',

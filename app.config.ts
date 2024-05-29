@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    primary: 'green',
+    primary: 'blue',
     gray: 'slate',
     button: {
       color: {
@@ -16,7 +16,7 @@ export default defineAppConfig({
       prose: {
         code: {
           icon: {
-            // terminal: 'i-ph-terminal'
+            terminal: 'i-ph-terminal'
           }
         }
       }
@@ -59,16 +59,10 @@ export default defineAppConfig({
     colorMode: false,
     links: [
       {
-        icon: 'i-simple-icons-discord',
-        to:'https://discord.gg/Y8VEvVgW',
+        to: 'https://qm.qq.com/q/mYIJRTqo0w',
+        icon: 'i-simple-icons-tencentqq',
         target: '_blank',
-        'aria-label': 'Discord',
-      },
-      {
-        icon: 'i-simple-icons-telegram',
-        to: 'https://t.me/solitudePro',
-        target: '_blank',
-        'aria-label': 'Telegram',
+        'aria-label': 'QQ Group',
       },
       {
         icon: 'i-simple-icons-github',
@@ -82,7 +76,7 @@ export default defineAppConfig({
     title: '目录',
     bottom: {
       title: '相关链接',
-      edit: 'https://github.com/efuo/docs/edit/main/content',
+      edit: 'https://github.com/everfu/solitude.js.org/edit/main/content',
       links: [
         {
           icon: 'i-heroicons-star',

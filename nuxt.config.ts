@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     'nuxt-og-image',
     '@nuxt/image',
-    '@nuxtjs/google-adsense',
+    // '@nuxtjs/google-adsense',
     ['@nuxtjs/robots', {
       rules: [
         {UserAgent: '*'},
