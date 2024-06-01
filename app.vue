@@ -14,7 +14,8 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { name: 'baidu-site-verification', content: 'codeva-LeTW5u4n40' },
     { name: 'google-site-verification', content: 'OQ-FnVME50EgIvv5nO4fsNl7EHkEl0vUSoFUe_fAMgY' },
-    { name: 'msvalidate.01', content: '7EBDEFFBCC9B2A2F2DCC7A53B7B02D02' }
+    { name: 'msvalidate.01', content: '7EBDEFFBCC9B2A2F2DCC7A53B7B02D02' },
+    { name: 'sogou_site_verification', content: 'V083fIOIFt'}
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico' }
