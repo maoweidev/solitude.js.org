@@ -1,6 +1,6 @@
 title: "Solitude - 一款优雅的 Hexo 主题"
 description: "欢迎使用 Solitude 主题，这是一款优雅的 Hexo 主题。"
-navigation: true
+navigation: false
 hero:
   title: "Theme Solitude"
   description: "一款优雅的 Hexo 主题，支持懒加载、PWA、Latex以及多种评论系统。"
