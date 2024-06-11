@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     'nuxt-og-image',
     '@nuxt/image',
-    // '@nuxtjs/google-adsense',
     ['@nuxtjs/robots', {
       rules: [
         {UserAgent: '*'},
@@ -36,9 +35,6 @@ export default defineNuxtConfig({
         }
       }
     },
-  },
-  googleAdsense: {
-    id: 'ca-pub-6338523842252061'
   },
   ui: {
     icons: ['heroicons', 'simple-icons']
