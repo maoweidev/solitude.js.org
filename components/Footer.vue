@@ -25,11 +25,11 @@ const footer_column = [
     label: '赞助',
     children: [{
       label: 'Github Sponsor',
-      to: 'https://github.com/sponsors/efuo/',
+      to: 'https://github.com/sponsors/everfu/',
       target: '_blank'
     }, {
       label: '爱发电',
-      to: 'https://afdian.net/a/efu0u0/',
+      to: 'https://afdian.net/a/everfu/',
       target: '_blank'
     }]
   }, {
