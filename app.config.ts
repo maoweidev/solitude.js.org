@@ -48,7 +48,7 @@ export default defineAppConfig({
     links: [
       {
         icon: 'i-simple-icons-github',
-        to: 'https://github.com/valor-x/hexo-theme-solitude',
+        to: 'https://github.com/everfu/hexo-theme-solitude',
         target: '_blank',
         'aria-label': 'Theme on GitHub',
       },
@@ -66,7 +66,7 @@ export default defineAppConfig({
       },
       {
         icon: 'i-simple-icons-github',
-        to: 'https://github.com/valor-x/hexo-theme-solitude',
+        to: 'https://github.com/everfu/hexo-theme-solitude',
         target: '_blank',
         'aria-label': 'Solitude on GitHub',
       },
@@ -81,7 +81,7 @@ export default defineAppConfig({
         {
           icon: 'i-heroicons-star',
           label: '点个 Star 吧！',
-          to: 'https://github.com/valor-x/hexo-theme-solitude',
+          to: 'https://github.com/everfu/hexo-theme-solitude',
           target: '_blank',
         },
         {

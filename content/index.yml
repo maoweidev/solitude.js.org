@@ -7,7 +7,7 @@ hero:
   orientation: horizontal
   headline:
     label: Solitude 1.11.1 现已发布！
-    to: https://github.com/valor-x/hexo-theme-solitude/releases/latest
+    to: https://github.com/everfu/hexo-theme-solitude/releases/latest
     icon: i-heroicons-sparkles-20-solid
   links:
     - label: 开始使用
@@ -19,7 +19,7 @@ hero:
       icon: i-simple-icons-github
       size: lg
       color: gray
-      to: https://github.com/valor-x/hexo-theme-solitude
+      to: https://github.com/everfu/hexo-theme-solitude
       target: _blank
     - label: 在 Gitee 上查看
       icon: i-simple-icons-gitee

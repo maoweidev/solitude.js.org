@@ -82,7 +82,7 @@ onMounted(() => {
             <p>最近一年下载量</p>
           </NuxtLink>
 
-          <NuxtLink class="text-center group" to="https://github.com/valor-x/hexo-theme-solitude" target="_blank">
+          <NuxtLink class="text-center group" to="https://github.com/everfu/hexo-theme-solitude" target="_blank">
             <p
               class="text-6xl font-semibold text-gray-900 dark:text-white group-hover:text-primary-500 dark:group-hover:text-primary-400"
             >
