@@ -14,9 +14,6 @@ const navigation = inject<Ref<NavItem[]>>('navigation')
       </template>
 
       <slot />
-      <ClientOnly>
-        <Comments />
-      </ClientOnly>
     </UPage>
   </UContainer>
 </template>
