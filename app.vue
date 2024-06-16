@@ -16,6 +16,7 @@ useHead({
     { name: 'google-site-verification', content: 'OQ-FnVME50EgIvv5nO4fsNl7EHkEl0vUSoFUe_fAMgY' },
     { name: 'msvalidate.01', content: '7EBDEFFBCC9B2A2F2DCC7A53B7B02D02' },
     { name: 'sogou_site_verification', content: 'V083fIOIFt'}
+    { name: 'google-adsense-account', content: 'ca-pub-6338523842252061'}
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico' }
